@@ -1,0 +1,117 @@
+/*
+This is a smaller variant of the new Lato2, serving compressed woff2 files.
+Currently: TS-Only
+Clients needs to have Lato2 pref turned ON.
+The payload is 50% smaller. However, woff2 is not yet well supported,
+so we're still providing the woff as fallback.
+*/
+
+/* Light */
+
+@font-face {
+	font-family: 'Slack-Lato';
+	font-style: normal;
+	font-weight: 300;
+	src: url(slack-resources:fonts/woff2/lato-light.woff2) format('woff2');
+	unicode-range: U+0000-F8FE, U+F900-FFFF;
+}
+/* Regular */
+@font-face {
+	font-family: 'Slack-Lato';
+	font-style: normal;
+	font-weight: 400;
+	src: url(slack-resources:fonts/woff2/lato-regular.woff2) format('woff2');
+	unicode-range: U+0000-F8FE, U+F900-FFFF;
+}
+/* Bold */
+@font-face {
+	font-family: 'Slack-Lato';
+	font-style: normal;
+	font-weight: 700;
+	src: url(slack-resources:fonts/woff2/lato-bold.woff2) format('woff2');
+	unicode-range: U+0000-F8FE, U+F900-FFFF;
+}
+/* Black */
+@font-face {
+	font-family: 'Slack-Lato';
+	font-style: normal;
+	font-weight: 900;
+	src: url(slack-resources:fonts/woff2/lato-black.woff2) format('woff2');
+	unicode-range: U+0000-F8FE, U+F900-FFFF;
+}
+/* Light Italic */
+@font-face {
+	font-family: 'Slack-Lato';
+	font-style: italic;
+	font-weight: 300;
+	src: url(slack-resources:fonts/woff2/lato-italic-light.woff2) format('woff2');
+	unicode-range: U+0000-F8FE, U+F900-FFFF;
+}
+/* Regular Italic */
+@font-face {
+	font-family: 'Slack-Lato';
+	font-style: italic;
+	font-weight: 400;
+	src: url(slack-resources:fonts/woff2/lato-italic.woff2) format('woff2');
+	unicode-range: U+0000-F8FE, U+F900-FFFF;
+}
+/* Bold Italic */
+@font-face {
+	font-family: 'Slack-Lato';
+	font-style: italic;
+	font-weight: 700;
+	src: url(slack-resources:fonts/woff2/lato-italic-bold.woff2) format('woff2');
+	unicode-range: U+0000-F8FE, U+F900-FFFF;
+}
+/* Black Italic */
+@font-face {
+	font-family: 'Slack-Lato';
+	font-style: italic;
+	font-weight: 900;
+	src: url(slack-resources:fonts/woff2/lato-italic-black.woff2) format('woff2');
+	unicode-range: U+0000-F8FE, U+F900-FFFF;
+}
+
+:root {
+  --primary: #61AFEF;
+  --text: #ABB2BF;
+}
+
+* {
+  border-color: #3e4450 !important;
+}
+
+div.p-message_pane {
+  background-color: #3e4450 !important;
+}
+
+div.c-message_list__day_divider__label__pill {
+  background-color: #3e4450 !important;
+  color: #ABB2BF !important;
+}
+
+div.c-message.c-message--light.c-message--hover {
+  color: #ABB2BF !important;
+}
+
+span.c-message__body, a.c-message__sender_link, span.c-message_attachment__media_trigger.c-message_attachment__media_trigger--caption, div.p-message_pane__foreword__description span {
+  color: #ABB2BF !important;
+}
+
+div.c-virtual_list__scroll_container, .p-degraded_list__loading, div[role="presentation"], .c-search_autocomplete__query_parts, .c-search__input_box, .c-search_autocomplete footer, #notification_bar, #footer_msgs, #primary_file_button, #msg_input, .ql-placeholder, .client_main_container, .c-scrollbar__hider {
+  background-color: #282C34 !important;
+  color: #ABB2BF !important;
+}
+
+.p-message_pane .c-message_list:not(.c-virtual_list--scrollbar), .p-message_pane .c-message_list.c-virtual_list--scrollbar > .c-scrollbar__hider {
+  z-index: 0;
+}
+
+div.c-message__content:hover, #client_header, .channel_header, #im_title, .ql-editor, .ql-editor.ql-blank {
+  background-color: #181c23 !important;
+  color: #ABB2BF !important;
+}
+
+div.c-message:hover, #client_header, .channel_header, .c-message--focus-within:not(.c-message--highlight):not(.c-message--standalone):not(.c-message--pinned):not(.c-message--ephemeral):not(.c-message--custom_response):not(.c-message--starred):not(.c-message--sli_highlight), .c-message--hover:not(.c-message--highlight):not(.c-message--standalone):not(.c-message--pinned):not(.c-message--ephemeral):not(.c-message--custom_response):not(.c-message--starred):not(.c-message--sli_highlight), .c-message:hover:not(.c-message--highlight):not(.c-message--standalone):not(.c-message--pinned):not(.c-message--ephemeral):not(.c-message--custom_response):not(.c-message--starred):not(.c-message--sli_highlight), .c-scrollbar__hider::before {
+  background-color: #181c23 !important;
+}
